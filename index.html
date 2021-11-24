@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버블콘</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main-slide.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./assets/js/solution-data.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="bbc_container">
+            <nav>
+                <h1 class="bbc_logo">로고</h1>
+
+                <ul>
+                    <li><a href="/" class="bbc_nav-link">HOME</a></li>
+                    <li><a href="#bbc-service" class="bbc_nav-link">서비스 소개</a></li>
+                    <li><a href="#bbc-solution" class="bbc_nav-link">기술</a></li>
+                    <li><a href="#bbc-company" class="bbc_nav-link">회사소개</a></li>
+                    <li><a href="#bbc-contact" class="bbc_nav-link btn_contact">문의하기</a></li>
+                </ul>
+                <button type="button" class="hbg_btn">
+                    <span class="bbc_icon-bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <section class="bbc_sec01" id="bbc-main">
+        <div class="obj c1"><img src="./assets/images/c1.png"></div>
+        <div class="obj c2"><img src="./assets/images/c2.png"></div>
+        <div class="obj c3"><img src="./assets/images/c3.png"></div>
+        <div class="obj c4"><img src="./assets/images/c4.png"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper slide-group">
+
+                <div class="swiper-slide slide-content">
+                    <div class="bbc_container">
+                        <span class="slide-sub">국내 최초 LRS기반 데이터 저장 솔루션</span>
+                        <h1 class="slide-title">Learning ACID</h1>
+                        <p class="slide-text">다양한 xAPI 데이터 대쉬보드를 활용한 컨텐츠 의사결정<br>
+                            학습 컨텐츠의 큐레이션을 위한 기초 데이터 수집
+                        </p>
+                        <div class="slideImg1 sec01-1-1"><img src="./assets/images/sec01-img.png"></div>
+                        <div class="slideImg2 sec01-1-2"><img src="./assets/images/sec01-img2.png"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-content">
+                    <div class="bbc_container">
+                        <span class="slide-sub">정형·비정형데이터 분석 모델링에서 다국어 통합검색</span>
+                        <h1 class="slide-title">콘텐츠 큐레이션 시스템</h1>
+                        <p class="slide-text">콘텐츠의 메타데이터를 빠르게<br> 인덱싱해서 검색 및 추천 엔진 구성<br>
+                            실시간 데이터 색인 처리 및 스케줄 기반 최적화된 색인 관리</p>
+                        <div class="slideImg1 sec01-1-1"><img src="./assets/images/sec01-img.png"></div>
+                        <div class="slideImg2 sec01-1-2"><img src="./assets/images/sec01-img2.png"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-content">
+                    <div class="bbc_container">
+                        <span class="slide-sub">손쉽고 편리한 강의 저작과 대화형학습 서비스</span>
+                        <h1 class="slide-title">대화형 학습 1gram</h1>
+                        <p class="slide-text">
+                            선생님의 강의 자료 제작의 부담은 줄이고<br>
+                            학습자의 수업몰입도는 높이고<br>
+                            학습자별 맞춤형 학습서비스 제공 서비스
+                        </p>
+                        <div class="slideImg1 sec01-1-1"><img src="./assets/images/sec01-img.png"></div>
+                        <div class="slideImg2 sec01-1-2"><img src="./assets/images/sec01-img2.png"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="bbc_slide-btn-group">
+                <div class="bbc_container">
+                    <div class="swiper-button-prev slider-link slide-left"></div>
+                    <div class="swiper-button-next slider-link slide-right"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="bbc_sec02" id="bbc-service">
+        <div class="bbc_container">
+            <h1>버블콘 제공 서비스</h1>
+            <p>다양한 기업과 공공기관에서 인정받은 최상의 기술력으로만 서비스를 만듭니다.</p>
+            <div class="tab-wrap">
+                <input type="radio" name="tabs" id="tab1" checked>
+                <div class="tab-label-content">
+                    <label for="tab1" data-target="#tab1-1" data-toggle="tab">1gram</label>
+                </div>
+                <input type="radio" name="tabs" id="tab2">
+                <div class="tab-label-content">
+                    <label for="tab2" data-target="#tab1-2" data-toggle="tab">Learning ACID</label>
+                </div>
+                <input type="radio" name="tabs" id="tab3">
+                <div class="tab-label-content">
+                    <label for="tab3" data-target="#tab1-3" data-toggle="tab">인공지능</label>
+                </div>
+                <div class="slide-bottom"></div>
+            </div>
+            <div class="tab-content d-flex tab-active" id="tab1-1">
+                <div class="tab-text">
+                    <h2>1gram</h2>
+                    <span>
+                        유튜브, 동영상이나 문서로 <br>
+                        텍스트부터 퀴즈까지 누구나 쉽게 <br>
+                        대화형 콘텐츠를 만들 수 있습니다. <br>
+                    </span>
+                    <button class="bbc_btn bbc-btn-outline-primary">시작하기</button>
+                    <button class="bbc_btn bbc-btn-primary">자세히 보기</button>
+                </div>
+                <div class="tab-img">
+                    <img src="./assets/images/sample.png" class="w-100">
+                </div>
+            </div>
+            <div class="tab-content d-flex" id="tab1-2">
+                <div class="tab-text">
+                    <h2>Learning ACID</h2>
+                    <span>
+                        유튜브, 동영상이나 문서로 <br>
+                        텍스트부터 퀴즈까지 누구나 쉽게 <br>
+                        대화형 콘텐츠를 만들 수 있습니다. <br>
+                    </span>
+                    <button class="bbc_btn bbc-btn-outline-primary">시작하기</button>
+                    <button class="bbc_btn bbc-btn-primary">자세히 보기</button>
+                </div>
+                <div class="tab-img">
+                    <img src="./assets/images/sample.png" class="w-100">
+                </div>
+            </div>
+            <div class="tab-content d-flex" id="tab1-3">
+                <div class="tab-text">
+                    <h2>인공지능</h2>
+                    <span>
+                        유튜브, 동영상이나 문서로 <br>
+                        텍스트부터 퀴즈까지 누구나 쉽게 <br>
+                        대화형 콘텐츠를 만들 수 있습니다. <br>
+                    </span>
+                    <button class="bbc_btn bbc-btn-outline-primary">시작하기</button>
+                    <button class="bbc_btn bbc-btn-primary">자세히 보기</button>
+                </div>
+                <div class="tab-img">
+                    <img src="./assets/images/sample.png" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bbc_sec03" id="bbc-solution">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="bbc_container">
+            <h1>제품 솔루션</h1>
+            <p>다양한 기업과 공공기관에서 인정받은 최상의 기술력으로만 서비스를 만듭니다.</p>
+            <div class="service-contents">
+                <ul>
+                    <li class="tech_item_box">
+                        <img src="./assets/images/service-icon-1.png">
+                        <h5>xAPI LRS</h5>
+                        <span>동정형화된 학습 뿐만 아니라<br>
+                            비정형학습까지 데이터 수집</span>
+                        <button class="bbc_btn bbc-btn-primary small modal_ck" data="0" data-toggle="modal"
+                            data-target="#modal1">상세보기</button>
+                        <button class="bbc_btn bbc-btn-outline-primary small">제품소개서 다운로드</button>
+                    </li>
+                    <li class="tech_item_box">
+                        <img src="./assets/images/service-icon-2.png">
+                        <h5>Contents Hub</h5>
+                        <span>학습자들의 모든 학습 활동 데이터를<br>
+                            수집하는 저장소</span>
+                        <button class="bbc_btn bbc-btn-primary small modal_ck" data="1" data-toggle="modal"
+                            data-target="#modal1">상세보기</button>
+                        <button class="bbc_btn bbc-btn-outline-primary small">제품소개서 다운로드</button>
+                    </li>
+                    <li class="tech_item_box">
+                        <img src="./assets/images/service-icon-3.png">
+                        <h5>Learning Analytics</h5>
+                        <span>학습자로부터 발생하는 다양한 데이터를<br>
+                            실시간 측정/수집/분석/보고하는 시스템</span>
+                        <button class="bbc_btn bbc-btn-primary small modal_ck" data="2" data-toggle="modal"
+                            data-target="#modal1">상세보기</button>
+                        <button class="bbc_btn bbc-btn-outline-primary small">제품소개서 다운로드</button>
+                    </li>
+                    <li class="tech_item_box">
+                        <img src="./assets/images/service-icon-4.png">
+                        <h5>LX 솔루션</h5>
+                        <span>동영상 인터넷 서비스에 필요한<br>
+                            모든 기능을 포함한 3종 솔루션</span>
+                        <button class="bbc_btn bbc-btn-primary small modal_ck" data="3" data-toggle="modal"
+                            data-target="#modal1">상세보기</button>
+                        <button class="bbc_btn bbc-btn-outline-primary small">제품소개서 다운로드</button>
+                    </li>
+                    <li class="tech_item_box">
+                        <img src="./assets/images/service-icon-5.png">
+                        <h5>LX Search</h5>
+                        <span>러닝 및 콘텐츠 큐레이션을 지원하는<br>
+                            다국어 통합 검색 시스템</span>
+                        <button class="bbc_btn bbc-btn-primary small modal_ck" data="4" data-toggle="modal"
+                            data-target="#modal1">상세보기</button>
+                        <button class="bbc_btn bbc-btn-outline-primary small">제품소개서 다운로드</button>
+                    </li>
+                    <li class="tech_item_box">
+                        <img src="./assets/images/service-icon-6.png">
+                        <h5>Interactive 저작도구</h5>
+                        <span>동영상, 문서 위에 다양한 인터렉티브 기능을<br>
+                            추가하여 새로운 콘텐츠 생성</span>
+                        <button class="bbc_btn bbc-btn-primary small modal_ck" data="5" data-toggle="modal"
+                            data-target="#modal1">상세보기</button>
+                        <button class="bbc_btn bbc-btn-outline-primary small">제품소개서 다운로드</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="bbc_sec04" id="bbc-company">
+        <div class="bbc_container">
+            <h1>회사소개</h1>
+            <div class="tab-wrap w-550">
+                <input type="radio" name="tabs2" id="company-tab1" checked>
+                <div class="tab-label-content">
+                    <label for="company-tab1" data-target="#tab2-1" data-toggle="tab">회사개요</label>
+                </div>
+
+                <input type="radio" name="tabs2" id="company-tab2">
+                <div class="tab-label-content">
+                    <label for="company-tab2" data-target="#tab2-2" data-toggle="tab">인증현황</label>
+                </div>
+
+                <input type="radio" name="tabs2" id="company-tab3">
+                <div class="tab-label-content">
+                    <label for="company-tab3" data-target="#tab2-3" data-toggle="tab">회사연혁</label>
+                </div>
+
+                <input type="radio" name="tabs2" id="company-tab4">
+                <div class="tab-label-content">
+                    <label for="company-tab4" data-target="#tab2-4" data-toggle="tab">고객사 & 파트너</label>
+                </div>
+
+                <div class="slide-bottom tabpart4"></div>
+            </div>
+            <div class="tab-content tab-active" id="tab2-1">
+                <div class="tab-text2">
+                    <h3>혁신을 잇다, 에듀테크(Edu Tech)의 비전을 이끌다!</h3>
+                    <p>주식회사 버블콘은<br>
+                        새로운 학습 패러다임 변화에 맞춘 학습 서비스를 제공하는 기업으로,<br>
+                        에듀테크 학습에 필요한 통합 기술은 물론 혁신적인 교육플랫폼으로<br>
+                        최상의 학습 서비스을 제공해 드리고 있습니다.
+                    </p>
+                    <table class="bbc_table">
+                        <tr>
+                            <th>기업명</th>
+                            <td>주식회사 버블콘</td>
+                        </tr>
+                        <tr>
+                            <th>대표자</th>
+                            <td>신영규</td>
+                        </tr>
+                        <tr>
+                            <th>창립일</th>
+                            <td>2019년</td>
+                        </tr>
+                        <tr>
+                            <th>사업분야</th>
+                            <td>xAPI 기반 에듀테크 학습 서비스 및 솔루션 제공</td>
+                        </tr>
+                        <tr>
+                            <th>소재지</th>
+                            <td>인천광역시 연수구 송도과학로 56, BT센터 2405호</td>
+                        </tr>
+                    </table>
+                    <ul class="bbc-overview">
+                        <li>
+                            <h4>서비스</h4>
+                            <ul class="bbc-overview-list">
+                                <li>1gram Learning Solution</li>
+                                <li>클라우드형 LRS 서비스</li>
+                                <li>SMB 시장 타겟 클라우드 기반의 LXP 서비스</li>
+                                <li>화상, VOD, VR/AR 등을 활용한 가상교실 임대 서비스(개발 중)</li>
+                                <li>지능형 개인 맞춤 서비스(개발 중)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>컨설팅</h4>
+                            <ul class="bbc-overview-list">
+                                <li>EdTech 솔루션 컨설팅 : LRS, Learning Big Data, Learning Platform, AI 등</li>
+                                <li>XAPI Process 컨설팅</li>
+                                <li>Enterprise LXP Architecture</li>
+                                <li>Contents Management & Learning Management Repository Design</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>개발</h4>
+                            <ul class="bbc-overview-list">
+                                <li>학습 데이터 모델링 및 빅데이터 수집/분석</li>
+                                <li>XAPI 시스템 연계</li>
+                                <li>빅데이터 검색 엔진 개발 및 연계</li>
+                                <li>콘텐츠 마이그레이션</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>솔루션</h4>
+                            <ul class="bbc-overview-list">
+                                <li>Contents Hub</li>
+                                <li>Learning ACID(LRS)</li>
+                                <li>Interactive 저작도구</li>
+                                <li>LX Video Platform</li>
+                                <li>LX Doc Platform</li>
+                                <li>LX Editor</li>
+                                <li>LX Search</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="tab2-2">
+                <div class="tab-text2">
+                    <h3>인증실적</h3>
+                    <p>버블콘은 학습 패러다임 변화에 맞춘 IT기술과 글로벌 표준을 통한 학습 서비스 제시하며 실현하고 있습니다.<br>
+                        우리는 끝없는 에듀테크 서비스 플랫폼을 5년간 개발하고 사용화하고 있습니다.<br>
+                        금융, 공공, 기업 등 다양한 고객을 대상으로 컨설팅과 솔루션 구축을 통해 <br>
+                        4차 산업혁명시대에 걸맞는 새로운 학습 모델과 선도적 에듀테크의 가치를 구현하도록 최선을 다 하겠습니다.</p>
+                    <ul class="prize-list tab-img2">
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/p1.png" class="w-100">
+                            <p>
+                                <span class="p-date">2020년 1월</span>
+                                <span class="p-name">특허출원 (출원번호: 10-2020-0010241)</span>
+                                <span class="p-text">xAPI를 이용한 블록체인 기반의 온라인 학습성과 인증방법 및 이를 위한 컴퓨터 프로그램</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="tab-content" id="tab2-3">
+                <div class="tab-text2">
+                    <h3>에듀테크 서비스의 시작</h3>
+                    <p>버블콘은 학습 패러다임 변화에 맞춘 IT기술과 글로벌 표준을 통한 학습 서비스 제시하며 실현하고 있습니다.<br>
+                        우리는 끝없는 에듀테크 서비스 플랫폼을 5년간 개발하고 사용화하고 있습니다.<br>
+                        금융, 공공, 기업 등 다양한 고객을 대상으로 컨설팅과 솔루션 구축을 통해 <br>
+                        4차 산업혁명시대에 걸맞는 새로운 학습 모델과 선도적 에듀테크의 가치를 구현하도록 최선을 다 하겠습니다.</p>
+                    <div class="tab-img2">
+                        <img src="./assets/images/company-history.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab2-4">
+                <div class="tab-text2">
+                    <h3>신뢰와 전문성으로,
+                        <strong>최고의 파트너들과 변화를 만듭니다.</strong>
+                    </h3>
+                    <p>공공 및 기업 금융 등의 다양한 고객사 및 파트너사들이 버블콘의 신뢰와 전문성을 인정하고 있습니다.
+                    </p>
+                    <div class="partner-list-wrap">
+                        <h5>파트너</h5>
+                        <div>
+                            <img src="./assets/images/partner.png" alt="" class="w-100">
+                        </div>
+                        <h5>고객사</h5>
+                        <div class="swiper partner-list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/images/pa1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa3.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa5.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa6.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa7.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa8.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa9.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./assets/images/pa10.png" alt=""></div>
+                            </div>
+                            <div class="swiper-button-next partner-btn-next"></div>
+                            <div class="swiper-button-prev partner-btn-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="bbc_sec05" id="bbc-contact">
+        <div class="bbc_container">
+            <h2>성공적인 비지니스를 위한 <strong>소중한 제안</strong>을 기다리고 있습니다.</h2>
+            <div class="bbc_contact-box">
+                <ul>
+                    <li>Tel. <strong>070 - 4632 - 1084</strong></li>
+                    <li>Fax. <strong>070 - 8673 - 6091</strong></li>
+                    <li>Mail. <strong>bubblecon@bubblecon.io</strong></li>
+                </ul>
+                <div class="bbc-btn-group">
+                    <button>회사 소개 요청</button>
+                    <button>제휴문의</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bbc_footer">
+        <div class="bbc_container">
+            <h3 class="company-name">(주) 버블콘</h3>
+            <p>
+                본사: 인천 연수구 송도과학로 56 송도테크노파크 BT센터 2405호<br>
+                지사: 서울시 용산구 서빙고로 17 7층 704호<br>
+                전화: 070-4632-1084 | 팩스: 070-8673-6091 이메일: syk@bubblecon.io<br>
+                사업자등록번호: 288-87-01240<br>
+            </p>
+            <!-- <div class="bbc_sns">
+                <a href="#" title="버블콘 유튜브">YOUTUBE</a>
+                <a href="https://www.facebook.com/BubbleCon-265431151005585" title="버블콘 페이스북">FACEBOOK</a>
+            </div> -->
+            <div class="bbc_copyright">Copyright 2019 BubbleCon. All Rights Reserved.</div>
+        </div>
+    </footer>
+    <!-- 스크롤탑 -->
+    <div class="bbc_scrolltop">Top</div>
+    <!-- 모달창 -->
+    <div class="bbc_modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+        <div class="bbc_modal-dialog">
+            <div class="bbc_modal-content">
+                <button type="button" class="bbc_modal-close" data-dismiss="modal" aria-label="Close">
+                    <span></span>
+                </button>
+                <div class="bbc_modal-body">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper modal_content">
+                            <!-- 내용 변경 -->
+                        </div>
+                        <!-- 네비게이션 버튼 -->
+                        <div class="swiper-button-next ppt-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                        <div class="swiper-button-prev ppt-prev"></div><!-- 이전 버튼 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- scroll trigger -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/scrollanimation.js"></script>
+
+
+    <script src="./assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버블콘</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main-slide.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <section class="bbc_sec01" id="bbc-main">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper slide-group">
+                <div class="swiper-slide slide-content">
+                    <div class="bbc_container">
+                        <h1 class="slide-title">대화형 학습 1gram</h1>
+                        <p class="slide-text">
+                            쉽고, 편리하게 다양한 인터랙션을<br>
+                            유튜브, 문서와 동영상 등에 저작하고<br>
+                            학습자의 클릭 이벤트까지 분석이 가능한<br>
+                            강의 공유 서비스 플랫폼<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-content">
+                    <div class="bbc_container">
+                        <h1 class="slide-title">Learning ACID</h1>
+                        <p class="slide-text">전체 & 개별 콘텐츠 별,<br>콘텐츠 활용 학습자 등의<br>
+                            학습데이터를 실시간으로 시각화</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-content">
+                    <div class="bbc_container">
+                        <h1 class="slide-title">문서 서칭 인공지능</h1>
+                        <p class="slide-text">문서 안에 있는 하나의 문장, 단어, 유사한 의미까지.<br>
+                            흩어져 있는 정보들을<br> 쉽게 검색해서 빠르게 병합까지</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bbc_slide-btn-group">
+                <div class="bbc_container">
+                    <div class="swiper-button-prev slider-link slide-left"></div>
+                    <div class="swiper-button-next slider-link slide-right"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
