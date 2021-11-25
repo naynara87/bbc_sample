@@ -138,6 +138,9 @@ header {
   display: flex;
   align-items: center;
   padding: 10px;
+  position: fixed;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.6);
 }
 header nav {
   display: flex;
@@ -181,6 +184,8 @@ header nav ul .bbc_nav-link.btn_contact {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding:0 15px;
+  box-sizing: border-box;
 }
 /* btn */
 
@@ -240,7 +245,7 @@ header nav ul .bbc_nav-link.btn_contact {
   background-size: cover;
   position: relative;
   height: calc(100vh - 180px);
-  min-height: 900px;
+  min-height: 800px;
   opacity: 0;
 }
 .bbc_sec01 .slide-content.swiper-slide-active {
@@ -276,7 +281,7 @@ header nav ul .bbc_nav-link.btn_contact {
   position: absolute;
   margin-top: 30px;
   width: 100%;
-  bottom: 12rem;
+  bottom: 18%;
   z-index: 3;
 }
 .bbc_slide-btn-group .slide-left,
@@ -332,17 +337,18 @@ header nav ul .bbc_nav-link.btn_contact {
 .slide-content .sec01-1-1 {
   position: absolute;
   display: inline-block;
-  width: 17vw;
+  width: 17%;
   max-width: 250px;
-  left: 45vw;
+  left: 44%;
+  bottom: -30%;
 }
 .slide-content .sec01-1-2 {
   position: absolute;
   display: inline-block;
-  width: 40vw;
+  width: 36%;
   max-width: 700px;
-  left: 58vw;
-  top: 14rem;
+  left: 58%;
+  top: 27%;
 }
 .swiper-slide {
   background: transparent !important;
@@ -812,23 +818,32 @@ label {
   box-sizing: border-box;
   font-size: 16px;
   color: #999;
+  text-align: left;
 }
 .bbc_sec04 ul.bbc-overview > li:hover {
   background-color: #eff;
 }
+.bbc_sec04 ul.bbc-overview > li img{
+  min-width: 50px;
+  width: 10%;
+  margin-right: 10px;
+}
 .bbc_sec04 ul.bbc-overview > li h4 {
   font-size: 24px;
-  margin-top: 0.5em;
   margin-bottom: 1em;
   color: #000;
   font-weight: 500;
   text-align: left;
   padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
 .bbc_sec04 ul.bbc-overview > li ul.bbc-overview-list {
   list-style: disc;
   text-align: left;
   padding-left: 30px;
+  color: #555;
+  font-weight: 300;ß
 }
 
 .bbc_sec04 .bbc_table tr {
@@ -1163,6 +1178,18 @@ label {
 
  ------------------------------------------------------------------------*/
 
+
+ @media (max-width: 1440px){
+  .slide-content .sec01-1-1 {
+    left: 34%;
+    bottom: -28%;
+  }
+  .slide-content .sec01-1-2 {
+    width: 38%;
+    left: 54%;
+    top: 38%;
+  }
+}
 @media (max-width: 768px) {
   .bbc_sec01 {
     padding-top: 82px;
@@ -1173,6 +1200,7 @@ label {
   }
   .bbc_container {
     width: 100%;
+    padding: 0;
   }
   .bbc_sec01 .bbc_container {
     /* width: 720px; */
@@ -1322,6 +1350,8 @@ label {
     position: fixed;
     z-index: 99;
     background: #fff;
+    top:0;
+    left:0;
   }
   header nav ul {
     display: none;

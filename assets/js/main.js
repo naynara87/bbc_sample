@@ -38,7 +38,6 @@ tabButton.click(function () {
 //모달
 $(".modal_ck").on('click', function () {
   var idx = $(this).attr('data');
-  console.log('dsf', idx);
   var element = solutionData[idx];
   $(".swiper2 .modal_content").html('');
   $(".swiper2 .swiper-wrapper").css('transform', 'translate3d(0, 0, 0);');
@@ -61,7 +60,6 @@ var modalButton = $("[data-toggle=modal]");
 var modalClose = $("[data-dismiss=modal]");
 
 modalClose.click(function () {
-  console.log('dskfjlsf');
   $(this).parents('.bbc_modal').removeClass('show');
   $('body').css("overflowY", "scroll");
   $(".swiper2 .modal_content").html('');
@@ -90,7 +88,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   loop: true,
   autoplay: {
-    delay: 3500,
+    delay: 4500,
     disableOnInteraction: false,
   },
   pagination: {
